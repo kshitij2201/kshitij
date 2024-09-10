@@ -885,7 +885,13 @@
         </div>
       </div>
 
-      <form id="contactForm" action="send_email.php" method="post" role="form" class="php-email-form mt-4">
+      <form  method="POST">
+
+    
+
+      <form id="contactForm"  action="https://api.web3forms.com/submit" method="post" role="form" class="php-email-form mt-4">
+        <input type="hidden" name="access_key" value="05fc040c-92e4-4114-a7ea-40f3d9d3b079">
+
         <div class="row">
             <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -905,6 +911,7 @@
             <div class="error-message" style="display:none;"></div>
             <div class="sent-message" style="display:none;">Your message has been sent. Thank you!</div>
         </div>
+        
         <div class="text-center"><button type="submit" value="send">Send Message</button></div>
     </form>
 
