@@ -517,6 +517,27 @@ section .container {
   background-color: #18d26e;
 }
 
+.skills .skill-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.skills .skill-group-item {
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 3px solid #18d26e;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Raleway", sans-serif;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .skills .skill-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
