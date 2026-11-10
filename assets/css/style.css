@@ -147,6 +147,16 @@ h6 {
   }
 }
 
+@media (max-width: 575px) {
+  #header h2 {
+    max-width: 100%;
+    padding: 0 12px;
+    text-align: center;
+    font-size: clamp(15px, 4.8vw, 18px);
+    line-height: 1.5;
+  }
+}
+
 /* Header Top */
 #header.header-top {
   height: 80px;
